@@ -66,7 +66,7 @@ function displayForecast(response) {
       </h3>
       <img src="images/${
         forecast.weather[0].icon
-      }.svg" class="forecast-images" style="width:70px;height:70px;padding:5px"/>
+      }.svg" class="forecast-images" style="width:60px;height:60px;padding:5px"/>
       <div class="weather-forecast-temperature">
         <strong>
           ${Math.round(forecast.main.temp_max)}°
