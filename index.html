@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="horizontal-line"></div>
+          <div class="vertical-line-left"></div>
+          <div class="vertical-line-right"></div>
+          <div class="vertical-line-center"></div>
+
+          <div id="form-container">
+            <form id="search-form" class="mb-3">
+              <input
+                id="city-input"
+                type="search"
+                placeholder="Enter a city here"
+                autofocus="on"
+                autocomplete="off"
+              />
+
+              <input id="city-submit" type="submit" value="→" />
+            </form>
+          </div>
+
+          <div class="overview"></div>
+
+          <div class="weather-results">
+            <div class="weather-icon">
+              <img src="" alt="" id="icon" />
+            </div>
+
+            <div class="weather-temperature">
+              <span id="temperature"></span>
+              <span class="units"
+                ><a href="#" id="celsius-link" class="active">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a></span
+              >
+            </div>
+
+            <div class="weather-details">
+              <h1 id="city"></h1>
+              <ul>
+                <li>Last updated: <span id="date"></span></li>
+                <li id="description"></li>
+              </ul>
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row weather-forecast" id="forecast"></div>
+
+          <div class="signature">
+            <a href="https://github.com/mathildegdr/weather-app" target="_blank"
+              >Open-source code</a
+            >
+            , by <strong>Mathilde Gaudier</strong>
+          </div>
+
+          <div class="name-weather-app">My weather app</div>
+
+          <div class="suggestion-shadow" id="london1"></div>
+          <div class="suggestion" id="london1">
+            <a href="#" id="london"> LONDON </a>
+          </div>
+          <div class="suggestion-shadow" id="berlin2"></div>
+          <div class="suggestion" id="berlin2">
+            <a href="#" id="berlin"> BERLIN </a>
+          </div>
+          <div class="suggestion-shadow" id="paris3"></div>
+          <div class="suggestion" id="paris3">
+            <a href="#" id="paris"> PARIS </a>
+          </div>
+          <div class="suggestion-shadow" id="newyork4"></div>
+          <div class="suggestion" id="newyork4">
+            <a href="#" id="newyork"> NEW YORK </a>
+          </div>
+          <div class="suggestion-shadow" id="losangeles5"></div>
+          <div class="suggestion" id="losangeles5">
+            <a href="#" id="losangeles"> LOS ANGELES </a>
+          </div>
+          <div class="suggestion-shadow" id="shanghai6"></div>
+          <div class="suggestion" id="shanghai6">
+            <a href="#" id="shanghai"> SHANGHAI </a>
+          </div>
+          <div class="suggestion-shadow" id="tokyo7"></div>
+          <div class="suggestion" id="tokyo7">
+            <a href="#" id="tokyo"> TOKYO </a>
+          </div>
+          <div class="suggestion-shadow" id="mexico8"></div>
+          <div class="suggestion" id="mexico8">
+            <a href="#" id="mexico"> MEXICO </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
